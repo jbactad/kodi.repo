@@ -16,19 +16,17 @@
 title: Jim Bactad's Kodi Repository
 email: github@jbactad.github.io
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+  This Kodi repository is for personal use only.
+baseurl: "/kodi.repo" # the subpath of your site, e.g. /blog
+url: "https://jbactad.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: joshjim27
 github_username: jbactad
 
 # Build settings
 markdown: kramdown
 theme: minima
-plugins:
-  - jekyll-feed
+#plugins:
+#  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
