@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<addon id="repository.jbactad" version="0.1.0" name="JBactad's Repository" provider-name="Jim Bactad">
+  <extension point="xbmc.addon.repository" name="JBactad's Repository">
+    <info compressed="true">http://jbactad.github.io/kodi.repo/repo/addons.xml</info>
+    <checksum>http://jbactad.github.io/kodi.repo/repo/addons.xml.md5</checksum>
+    <datadir zip="true">http://jbactad.github.io/kodi.repo/repo</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Jim Bactad's Repository</summary>
+    <description lang="en">A repository of add-ons that Jim Bactad developed for a personal Kodi system</description>
+    <platform>all</platform>
+    <language>en</language>
+    <source>https://github.com/jbactad/kodi.repo</source>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  </extension>
+</addon>

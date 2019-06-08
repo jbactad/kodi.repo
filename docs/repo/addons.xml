@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addons><addon id="plugin.video.yify" name="YIFY movies" provider-name="Jim Bactad" version="0.1.0">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.xbmcswift2" version="2.4.0" />
+        <import addon="script.module.requests" version="2.6.0" />
+        <import addon="script.module.libtorrent" />
+        <import addon="script.module.bottle" version="0.12.8" />
+    </requires>
+    <extension library="yify.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension library="torrent.py" point="xbmc.service" start="[login|startup]" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>en</language>
+        <summary>HD movies at the smallest file size.</summary>
+        <description>Here you will be able to browse and stream YIFY movies in excellent 720p, 1080p and 3D quality,
+            all at the smallest file size.
+        </description>
+        <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The
+            author does not have any affiliation with the content provider.
+        </disclaimer>
+    </extension>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+</addon><addon id="script.module.libtorrent" name="python-libtorrent" provider-name="DiMartino, srg70, RussakHH, aisman, inpos" version="1.1.7">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.script">
+    <provides>executable</provides>
+  </extension>
+  <extension library="python_libtorrent" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">script.module.libtorrent is a Kodi module that makes easy import of python-libtorrent for you.</summary>
+    <summary lang="ru">script.module.libtorrent - модуль Kodi, который упрощает импорт библиотеки python-libtorrent.</summary>
+    <summary lang="es">script.module.libtorrent es un módulo de Kodi que facilita la importación de la librería python-libtorrent.</summary>
+    <license>MIT License</license>
+    <source>https://github.com/inpos/script.module.libtorrent</source>
+  </extension>
+  <extension point="xbmc.python.module" />
+</addon><addon id="repository.jbactad" name="JBactad's Repository" provider-name="Jim Bactad" version="0.1.0">
+  <extension name="JBactad's Repository" point="xbmc.addon.repository">
+    <info compressed="false">http://jbactad.github.io/kodi.repo/repo/addons.xml</info>
+    <checksum>http://jbactad.github.io/kodi.repo/repo/addons.xml.md5</checksum>
+    <datadir zip="true">http://jbactad.github.io/kodi.repo/repo</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Jim Bactad's Repository</summary>
+    <description lang="en">A repository of add-ons that Jim Bactad developed for a personal Kodi system</description>
+    <platform>all</platform>
+    <language>en</language>
+    <source>https://github.com/jbactad/kodi.repo</source>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  </extension>
+</addon></addons>
